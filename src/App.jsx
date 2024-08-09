@@ -1,25 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
 import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('dark-mode');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>My Portfolio</h1>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <p>Welcome to my portfolio website!</p>
-      </header>
+    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Banner />
       <section id="about">
         <About />
       </section>
@@ -32,9 +34,13 @@ function App() {
       <section id="projects">
         <Projects />
       </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 }
