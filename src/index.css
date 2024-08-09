@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #0500f7;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #21a1f1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #7d47aa;
+  padding: 20px;
+  color: white;
+}
+
+section {
+  margin: 20px;
+}
+
+.project {
+  margin-bottom: 15px;
+}
+
+.experience {
+  margin-bottom: 15px;
+}
+
+.experience h3 {
+  margin: 5px 0;
+}
+
+.experience p {
+  margin: 5px 0;
+}
+
+.skills {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  background-color: #7061fb;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #1701d6;
+}

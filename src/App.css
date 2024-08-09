@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+section {
+  margin: 20px;
+}
+
+.project {
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #61dafb;
+}
